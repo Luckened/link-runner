@@ -1,11 +1,11 @@
 # link-runner
 Simple endless runner game using OpenGL made in computer graphics course.  
-Jogo simples estilo "endless runner" feito na disciplina de computação gráfica.       
+Jogo simples estilo "endless runner" utilizando OpenGL feito na disciplina de computação gráfica.       
 
-To play, type "make run" on terminal;   
+To play, type `"make run"` on terminal;   
 To remove temp files, type "make clean";    
 
-Para jogar, digite "make run" no terminal;    
+Para jogar, digite `"make run"` no terminal;    
 Para remover arquivos temporários, digite "make clean";   
 
 make sure to have all these libs installed to fully enjoy the game:   
