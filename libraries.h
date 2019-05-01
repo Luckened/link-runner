@@ -1,0 +1,9 @@
+#include <GL/glew.h>
+#include <GL/freeglut.h>
+#include <SOIL/SOIL.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_mixer.h>
+#include "variables.h"
