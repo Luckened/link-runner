@@ -259,31 +259,31 @@ void redimensiona(int w, int h){
     glLoadIdentity();
 }
 void defineTexturas(){
-	MENULINK =  SOIL_load_OGL_texture("LOGO.png",       SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-	MENUPLAY =  SOIL_load_OGL_texture("PLAY.png",       SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    LINK     =  SOIL_load_OGL_texture("LINK.png",       SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    FUNDO    =  SOIL_load_OGL_texture("FUNDO.png",      SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    ESTRELAS =  SOIL_load_OGL_texture("ESTRELAS.png",   SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    OBS1     =  SOIL_load_OGL_texture("FLOWEY.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    OBS2     =  SOIL_load_OGL_texture("SHURIKEN.png",   SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    PULO     =  SOIL_load_OGL_texture("PULO.png",       SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    MORTE    =  SOIL_load_OGL_texture("GAMEOVER.png",   SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    ABAIXA   =  SOIL_load_OGL_texture("PULO.png",       SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    VIDAS    =  SOIL_load_OGL_texture("VIDAS.png",      SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    VIDAS0   =  SOIL_load_OGL_texture("VIDAS0.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    VIDAS1   =  SOIL_load_OGL_texture("VIDAS1.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    VIDAS2   =  SOIL_load_OGL_texture("VIDAS2.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    VIDAS3   =  SOIL_load_OGL_texture("VIDAS3.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
-    VIDAEXTRA = SOIL_load_OGL_texture("VIDAEXTRA.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+	MENULINK =  SOIL_load_OGL_texture("img/LOGO.png",       SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+	MENUPLAY =  SOIL_load_OGL_texture("img/PLAY.png",       SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    LINK     =  SOIL_load_OGL_texture("img/LINK.png",       SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    FUNDO    =  SOIL_load_OGL_texture("img/FUNDO.png",      SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    ESTRELAS =  SOIL_load_OGL_texture("img/ESTRELAS.png",   SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    OBS1     =  SOIL_load_OGL_texture("img/FLOWEY.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    OBS2     =  SOIL_load_OGL_texture("img/SHURIKEN.png",   SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    PULO     =  SOIL_load_OGL_texture("img/PULO.png",       SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    MORTE    =  SOIL_load_OGL_texture("img/GAMEOVER.png",   SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    ABAIXA   =  SOIL_load_OGL_texture("img/PULO.png",       SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    VIDAS    =  SOIL_load_OGL_texture("img/VIDAS.png",      SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    VIDAS0   =  SOIL_load_OGL_texture("img/VIDAS0.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    VIDAS1   =  SOIL_load_OGL_texture("img/VIDAS1.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    VIDAS2   =  SOIL_load_OGL_texture("img/VIDAS2.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    VIDAS3   =  SOIL_load_OGL_texture("img/VIDAS3.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
+    VIDAEXTRA = SOIL_load_OGL_texture("img/VIDAEXTRA.png",     SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
     if (!MENULINK || !MENUPLAY || !LINK || !FUNDO || !ESTRELAS || !OBS1 || !OBS2 || !PULO || !MORTE || !ABAIXA || !VIDAS || !VIDAS0 || !VIDAS1 || !VIDAS2 || !VIDAS3 || !VIDAEXTRA)
         printf("Erro carregando textura: '%s'\n", SOIL_last_result());
 }
 void defineSons(){
-	musica =      Mix_LoadMUS("spearofjustice.mp3");
-    somMenu =     Mix_LoadMUS("musicamenu.mp3");
-    somGameover = Mix_LoadMUS("gameover.mp3");
-    somColisao =  Mix_LoadWAV("colide.wav");
-    somVida =     Mix_LoadWAV("powerupsound.wav");
+	musica =      Mix_LoadMUS("sound/spearofjustice.mp3");
+    somMenu =     Mix_LoadMUS("sound/musicamenu.mp3");
+    somGameover = Mix_LoadMUS("sound/gameover.mp3");
+    somColisao =  Mix_LoadWAV("sound/colide.wav");
+    somVida =     Mix_LoadWAV("sound/powerupsound.wav");
 }
 void definePersonagem(){
 	personagem.x =     0; 
